@@ -3,6 +3,7 @@ body{
     flex-direction: column;
     align-items: center;
     background: #ffffff;
+    width: 97%;
 
 }
 
@@ -35,10 +36,14 @@ body{
 
 
 .main .search_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
     margin-top:127px;
+
 }
 .main .search_form label p{
-    flex-basis:50%;
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
@@ -112,7 +117,52 @@ body{
     height: 48px;
 }
 
+.main .explore{
+    margin-top: 107px;
+}
 
+.main .explore p{
+    margin-bottom: -10px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 43px;
+    color: #484848;
+}
+.main .explore .cards{
+    margin: 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.main .explore .card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    width: 244px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 16px #ECECEC;
+    border-radius: 5px;
+}
+.main .cards p{
+    font-family: Poppins;
+    font-style: normal;
+    margin: auto;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 29px;
+    color: #484848;
+}
+.main .cards img{
+    width: 96px;
+    height: 70px;
+}
 
 
 
