@@ -1,3 +1,124 @@
-.t{
-    font-size:5em ;
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+
 }
+
+.header{
+    width: 95%;
+}
+
+.header ul{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: right;
+    flex-wrap: nowrap;
+    list-style: none;
+    margin-left: -10px;
+
+}
+
+.header ul a{
+    color: #474747;
+    text-decoration: none;
+    font-family: "Poppins";
+    font-size: 14px;
+    margin-right: 30px;
+}
+.header ul .margin_item{
+    margin-left: auto;
+}
+
+
+.main .search_form{
+    margin-top:127px;
+}
+.main .search_form label p{
+    flex-basis:50%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 43px;
+    line-height: 56px;
+}
+.main .search_form label span{
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 76px;
+    color: #FC3C4F;
+}
+.main .search_form .bar{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 72px;
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 16px #ECECEC;
+    border-radius: 5px;
+}
+.main .search_form img{
+    margin-left:10px ;
+    margin-right: 10px;
+
+}
+.main .search_form .bar .city{
+    height: 66px;
+    width: 100%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+    border: hidden;
+}
+.main .search_form .bar .city::placeholder{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 30px;
+    color: #767676;
+}
+.main .search_form .bar .city:focus{
+    outline: none;
+
+}
+
+
+.main .search_form .bar button{
+    margin-left:auto;
+    margin-right: 10px;
+    background: #FF5661;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 25px;
+    color: #FFFFFF;
+
+    border: hidden;
+    text-align: center;
+    border-radius: 5px;
+    height: 48px;
+}
+
+
+
+
+
+
+
+
+
+
+
