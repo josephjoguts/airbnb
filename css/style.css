@@ -1,16 +1,20 @@
 body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background: #ffffff;
     width: 97%;
 
 }
-
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .header{
     width: 95%;
 }
-
+p{
+    font-family: Poppins;
+    font-style: normal;
+}
 .header ul{
     display: flex;
     flex-direction: row;
@@ -29,12 +33,12 @@ body{
     font-family: "Poppins";
     margin-right: 30px;
 }
-.header ul .margin_item{
+.header ul .margin_item {
     margin-left: auto;
 }
 
 
-.main .search_form{
+.search_form{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,23 +46,23 @@ body{
     margin-top:30px;
 
 }
-.main .search_form label p{
-    font-family: Poppins;
-    font-style: normal;
+.search_form label p {
+
+
     font-weight: 500;
     font-size: 43px;
     line-height: 56px;
 }
-.main .search_form label span{
+.search_form label span{
 
-    font-family: Poppins;
-    font-style: normal;
+    
+    
     font-weight: 600;
     font-size: 45px;
     line-height: 76px;
     color: #FC3C4F;
 }
-.main .search_form .bar{
+.search_form .bar{
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -70,41 +74,41 @@ body{
     box-shadow: 0px 2px 16px #ECECEC;
     border-radius: 5px;
 }
-.main .search_form img{
+ .search_form img{
     margin-left:10px ;
     margin-right: 10px;
 
 }
-.main .search_form .bar .city{
+.search_form .bar .city{
     height: 66px;
     width: 100%;
-    font-family: Poppins;
-    font-style: normal;
+    
+    
     font-weight: normal;
     font-size: 25px;
     line-height: 30px;
     border: hidden;
 }
-.main .search_form .bar .city::placeholder{
-    font-family: Poppins;
-    font-style: normal;
+ .search_form .bar .city::placeholder{
+    
+    
     font-weight: normal;
     font-size: 19px;
     line-height: 30px;
     color: #767676;
 }
-.main .search_form .bar .city:focus{
+.search_form .bar .city:focus{
     outline: none;
 
 }
 
 
-.main .search_form .bar button{
+.search_form .bar button{
     margin-left:auto;
     margin-right: 10px;
     background: #FF5661;
-    font-family: Poppins;
-    font-style: normal;
+    
+    
     font-weight: 500;
     font-size: 19px;
     line-height: 25px;
@@ -116,27 +120,29 @@ body{
     height: 48px;
 }
 
-.main .explore{
+
+
+  .explore{
     margin-top: 107px;
 }
 
-.main .explore p{
+ .explore p{
     margin-bottom: -10px;
 
-    font-family: Poppins;
-    font-style: normal;
+
+
     font-weight: 600;
     font-size: 26px;
     line-height: 43px;
     color: #484848;
 }
-.main .explore .cards{
+ .explore .explore_cards{
     margin: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.main .explore .card{
+ .explore .explore_card{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -150,16 +156,14 @@ body{
     box-shadow: 0px 2px 16px #ECECEC;
     border-radius: 5px;
 }
-.main .cards p{
-    font-family: Poppins;
-    font-style: normal;
+ .explore .explore_card p{
     margin: auto;
     font-weight: 600;
     font-size: 17px;
     line-height: 29px;
     color: #484848;
 }
-.main  .cards img{
+ .explore .explore_cards img{
     width: 96px;
     height: 70px;
 }
@@ -169,52 +173,86 @@ body{
 
 
 
-
-
-
-.main .experiences{
+.experiences ,  .homes, .new-york ,.featured{
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    margin-top: 67px;
-}
-.main .experiences>div{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
 
 }
-.main .experiences>p {
-    margin-bottom: -20px;
-    font-family: Poppins;
-    font-style: normal;
+.experiences > p, .homes > p, .new-york > p{
     font-weight: 600;
     font-size: 26px;
     line-height: 43px;
-
-    /* identical to box height, or 165% */
     letter-spacing: 0.2px;
-
     color: #484848;
+    margin-bottom: -90px;
+
+
 }
-.main .experiences .card{
+.featured>p{
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 43px;
+    letter-spacing: 0.2px;
+    color: #484848;
+    margin-bottom: -3px;
+}
+
+.homes{
+    margin-top: 100px;
+}
+.featured{
+    margin-top: 150px;
+}
+ .experiences > div, .homes > div, .new-york > div,.featured>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    height: 243px;
+    width: 277px;
+    margin-top: 90px;
+}
+
+ .card img {
     width: 243px;
-    height: 278px;
-    margin-right: 19px;
-    margin-top: 32px;
+    height: 164px;
+}
+ .card .rating{
+    width: 61px;
+    height: 10px;
+}
+ .card p{
+     padding: 0;
+     margin: 2px;
+ }
+ .homes .card img {
+    width: 333px;
+    height: 222px;
+}
+.homes .card .rating{
+    width: 61px;
+    height: 10px;
+}
+.homes .card{
+    margin-right: auto;
+}
 
+.featured_card{
+    margin-right: auto;
 }
-.main .experiences .card img{
-    width:243px;
-    height:164px;
+.card .description{
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+
+    /* identical to box height, or 129% */
+    letter-spacing: 0.17px;
+
+    color: #484848;
 }
-main .experiences .card p{
-    padding: 0;
-    margin: 0;
-}
-.main .experiences .card .place{
-    font-family: Poppins;
-    font-style: normal;
+.card .place{
     font-weight: 600;
     font-size: 11px;
     line-height: 20px;
@@ -223,24 +261,10 @@ main .experiences .card p{
     letter-spacing: 0.11px;
     text-transform: uppercase;
 
-    color: #002B37;
+    color: #4F4F4F;
 }
-.main .experiences .card .description{
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 17px;
-    line-height: 22px;
 
-    /* identical to box height, or 129% */
-    letter-spacing: 0.17px;
-
-    color: #464646;
-}
-.main .experiences .card .price{
-
-    font-family: Poppins;
-    font-style: normal;
+.card .price{
     font-weight: 300;
     font-size: 14px;
     line-height: 24px;
@@ -250,124 +274,124 @@ main .experiences .card p{
 
     color: #464646;
 }
-.main .experiences .card .rating
-{
-    width: 61px;
-    height: 10px;
-}
-.main .experiences .card  .retro_photo{
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-.main .experiences .card .retro_description{
-    color: #009AB4;
-}
-.main .experiences .card span{
-    font-family: Poppins;
-    font-style: normal;
+.card span{
     font-weight: normal;
     font-size: 13px;
     line-height: 5px;
 
+    /* identical to box height, or 38% */
     letter-spacing: 0.1px;
+
     color: #484848;
 
 }
+.new-york .card .place{
+    color: #8F5131;
+}
+
+.new-york .card .orange{
+    color: #F08237;
+}
 
 
+.main{
+    padding-bottom: 100px;
+}
 
-
-.main .homes{
+.footer{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    margin-top: 67px;
+    border-top: 1px solid #DBDBDB;
+    width: 95%;
 }
-.main .homes>div{
+.footer .info{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
+    align-items: baseline;
+    justify-content: center;
 }
-.main .homes>p {
-    margin-bottom: -20px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 43px;
-
-    /* identical to box height, or 165% */
-    letter-spacing: 0.2px;
-
-    color: #484848;
+.footer .info .options{
+    display: flex;
+    flex-direction: column;
 }
-.main .homes .card{
-    width: 333px;
-    height: 316px;
-    margin-right: 10px;
-    margin-top: 32px;
-
+.footer ul{
+    list-style: none;
+    margin-left:107px;
+    white-space: nowrap;
 }
-.main .homes .card img{
-    width:333px;
-    height:222px;
+.footer ul .first{
+    margin-bottom: 16.1px;
 }
-main .homes .card p{
-    padding: 0;
-    margin: 0;
-}
-.main .homes .card .place{
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 20px;
-
-    /* identical to box height, or 182% */
-    letter-spacing: 0.11px;
-    text-transform: uppercase;
-
-    color: #002B37;
-}
-.main .homes .card .description{
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 17px;
-    line-height: 22px;
-
-    /* identical to box height, or 129% */
-    letter-spacing: 0.17px;
-
-    color: #464646;
-}
-.main .homes .card .price{
-
+.footer ul a{
+    text-decoration: none;
     font-family: Poppins;
     font-style: normal;
     font-weight: 300;
-    font-size: 14px;
-    line-height: 24px;
-
-    /* identical to box height, or 171% */
-    letter-spacing: 0.14px;
-
-    color: #464646;
+    font-size: 15px;
+    line-height: 18px;
+    color: #767676
 }
-.main .homes .card .rating
-{
-    width: 61px;
-    height: 10px;
+.footer ul .first a{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #484848;
 }
-.main .homes .card span{
+.footer .info select{
+    width: 248px;
+    height: 46.28px;
+    margin-top: 10px;
     font-family: Poppins;
     font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 5px;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 24px;
 
-    letter-spacing: 0.1px;
+    /* or 126% */
+
     color: #484848;
+}
+.footer .social_container{
+    align-self: center;
+    width: 1100px;
+    border-top: 1px solid #DBDBDB;
+}
+.footer .social_links {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 10px 0;
+    padding: 0;
+}
+.footer .social_links li img{
+    width: 20px;
+    height: 20px;
+}
+.footer .social_links li{
+    margin: 5px;
+}
+.footer .social_links .margin_item{
+    margin-left:auto ;
+}
+@media (max-width: 1150px) {
+    .experiences > p, .homes > p, .new-york > p, .featured>p , .explore >p{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .experiences > div , .homes .card, .new-york .card ,.featured_card{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer .info ul{
+        margin-left: auto;
+    }
+    .footer .social_container{
+        width: 849px;
+    }
 
 }
+@media (max-width: 850px){
+    .footer .hide{
+        display: none;
+    }
+}
+

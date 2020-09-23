@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Poppins">
     <meta charset="utf-8">
@@ -9,6 +10,7 @@
 </head>
 
 <body>
+<div class="container">
 <header class="header">
 <ul>
   <li class="logo">
@@ -48,16 +50,16 @@
 
     <div class="explore">
         <p>Explore Airbnb</p>
-        <div class="cards">
-        <div class="card first">
+        <div class="explore_cards">
+        <div class="explore_card first">
             <img src="images/explore/homes.png">
             <p>Homes</p>
         </div>
-        <div class="card">
+        <div class="explore_card">
             <img src="images/explore/exp.png">
             <p>Experiences</p>
         </div>
-        <div class="card">
+        <div class="explore_card">
             <img src="images/explore/rest.png">
             <p>Restaurants</p>
         </div>
@@ -99,6 +101,7 @@
         </div>
     </div>
 
+
     <div class="homes">
         <p>Homes</p>
         <div>
@@ -107,36 +110,200 @@
                 <p class="place">NIGHTLIFE &#183; NEW YORK</p>
                 <p class="description">Unique Cob Cottage</p>
                 <p class="price">$209 per person</p>
-                <img class="rating "src="images/Ratings.svg"><span>284 &#183; Superhost</span>
+                <img class="rating"src="images/Ratings.svg"><span>284 &#183; Superhost</span>
             </div>
             <div class="card">
                 <img class="photo" src="images/Homes/josh.png">
                 <p class="place">NIGHTLIFE &#183; NEW YORK</p>
                 <p class="description">The Joshua Tree House</p>
                 <p class="price">$250 per person</p>
-                <img class="rating "src="images/Ratings.svg"><span>269 &#183; Superhost</span>
+                <img class="rating"src="images/Ratings.svg"><span>269 &#183; Superhost</span>
             </div>
             <div class="card">
                 <img class="photo" src="images/Homes/pirate.png">
                 <p class="place">NIGHTLIFE &#183; NEW YORK</p>
                 <p class="description">A Pirate's Life For Me - Houseboat!</p>
                 <p class="price">$128 per person</p>
-                <img class="rating "src="images/Ratings.svg"><span>140</span>
+                <img class="rating"src="images/Ratings.svg"><span>140</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="featured">
+        <p>Featured destinations</p>
+        <div class="featured_cards">
+            <div class="featured_card">
+                <img src="images/destination/paris.png">
+                <p>Paris</p>
+            </div>
+            <div class="featured_card">
+                <img src="images/destination/tokyo.png">
+                <p>Tokyo</p>
+            </div>
+            <div class="featured_card">
+                <img src="images/destination/miami.png">
+                <p>Miami</p>
+            </div>
+            <div class="featured_card">
+                <img src="images/destination/capetown.png">
+                <p>Capetown</p>
+            </div>
+            <div class="featured_card">
+                <img src="images/destination/seoul.png">
+                <p>Seoul</p>
+            </div>
+            <div class="featured_card">
+                <img src="images/destination/havana.png">
+                <p>Havana</p>
             </div>
         </div>
     </div>
 
 
 
-
-
-
+    <div class="new-york">
+        <p>Experiences in New York</p>
+        <div>
+            <div class="card">
+                <img class="photo" src="images/newyork/graff.png">
+                <p class="place orange">Art Walk</p>
+                <p class="description">Street art scene with photographer</p>
+                <p class="price">$30 per person</p>
+                <img class="rating "src="images/Ratings.svg"><span>30</span>
+            </div>
+            <div class="card">
+                <img class="photo" src="images/newyork/museum.png">
+                <p class="place">Art Walk</p>
+                <p class="description">Discover hidden artwork with a curator</p>
+                <p class="price">$35 per person</p>
+                <img class="rating "src="images/Ratings.svg"><span>1</span>
+            </div>
+            <div class="card">
+                <img class="photo" src="images/newyork/music.png">
+                <p class="place">history walk</p>
+                <p class="description">Best Funk + Folk from the NYC Subway</p>
+                <p class="price">$35 per person</p>
+                <img class="rating "src="images/Ratings.svg"><span>179</span>
+            </div>
+            <div class="card">
+                <img class="photo" src="images/newyork/bar.png">
+                <p class="place orange">concert</p>
+                <p class="description">Raise a glass to Prohibition</p>
+                <p class="price">$35 per person</p>
+                <img class="rating "src="images/Ratings.svg"><span>72</span>
+            </div>
+        </div>
+    </div>
 </main>
 
-<footer>
+<footer class="footer">
+    <div class = "info">
+     <div class = "options">
+         <select name = "language">
+             <option>English</option>
+             <option>Russian</option>
+         </select>
+         <select name = "money">
+             <option>United Stated Dollars</option>
+             <option>Rubles</option>
+         </select>
+         </div>
+         <ul class="hide">
+             <li class ="first">
+                <a>Airbnb</a>
+             </li>
+             <li>
+                 <a href="">About us</a>
+             </li>
+             <li>
+                 <a href="">Careers</a>
+             </li>
+             <li>
+                 <a href="">Press</a>
+             </li>
+             <li>
+                 <a href="">Policies</a>
+             </li>
+             <li>
+                 <a href="">Help</a>
+             </li>
+             <li>
+                 <a href="">Diversity & Belonging</a>
+             </li>
 
-</footer>
-
+         </ul>
+         <ul class="hide">
+             <li class ="first">
+                 <a>Discover</a>
+             </li>
+             <li>
+                 <a href="">Trust & Safety</a>
+             </li>
+             <li>
+                 <a href="">Travel Credit</a>
+             </li>
+             <li>
+                 <a href="">Gidt Cards</a>
+             </li>
+             <li>
+                 <a href="">Airbnb Citizen</a>
+             </li>
+             <li>
+                 <a href="">Business Travel</a>
+             </li>
+             <li>
+                 <a href="">Guidebooks</a>
+             </li>
+             <li>
+                 <a href="">Airbnbmag</a>
+             </li>
+         </ul>
+         <ul class="hide">
+             <li class ="first">
+                 <a>Hosting</a>
+             </li>
+             <li>
+                 <a href="">Why Host</a>
+             </li>
+             <li>
+                 <a href="">Hospitality</a>
+             </li>
+             <li>
+                 <a href="" >Responsible Hosting</a>
+             </li>
+             <li>
+                 <a href="">Community Center</a>
+             </li>
+         </ul>
+    </div>
+    <div class="social_container hide">
+    <ul class="social_links">
+         <li>
+            <img src="images/footer/LogoGrey.svg">
+         </li>
+        <li>
+            <a>© Airbnb, Inc.</a>
+        </li>
+        <li class="margin_item">
+            <a href="">Terms</a>
+        </li>
+        <li>
+            <a href="" >Site Map</a>
+        </li>
+        <li>
+            <img src="images/footer/facebook.svg">
+        </li>
+        <li>
+            <img src="images/footer/inst.svg">
+        </li>
+        <li>
+           <img src="images/footer/twitter.svg">
+        </li>
+        </ul>
+        </div>
+    </footer>
+</div>
 <script src="libs/base.js"></script>
 </body>
 
