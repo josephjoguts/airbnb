@@ -16,6 +16,8 @@ body{
 }
 .header{
     width: 95%;
+    display: flex;
+
 }
 p{
     font-family: Poppins;
