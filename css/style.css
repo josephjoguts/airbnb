@@ -211,7 +211,7 @@ p{
     margin-top: 100px;
 }
 .featured{
-    margin-top: 150px;
+    margin-top: 50px;
 }
  .experiences > div, .homes > div, .new-york > div,.featured>div{
     display: flex;
