@@ -26,9 +26,15 @@ for(custom_select of custom_selects) {
     itemList.classList.add("closed");
     shown.append(itemList);
     shown.onclick = function (e) {
-        itemList.classList.toggle("closed")
+        let closing=custom_select.closest(".custom-select").querySelector(".itemList");
+        if(!closing.classList.contains("closed")){
+            console.log(closing)
+            closing.classList.add("closed")
+        }
+        itemList.classList.remove("closed")
     }
 }
+
 function close_selects(e){
     if(!e.target.closest("div").classList.contains("select")){
         for(select of document.querySelectorAll(".itemList")){
