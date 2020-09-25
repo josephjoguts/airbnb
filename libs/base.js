@@ -1,25 +1,41 @@
+let custom_selects = document.querySelectorAll(".custom-select");
+for(custom_select of custom_selects) {
+    let shown = document.createElement("div");
+    shown.setAttribute("class", "select");
+    let t = custom_select.querySelector("select")
+    shown.innerHTML = `<p>${t.options[t.selectedIndex].value}</p><img src="images/footer/arrow.svg">`
 
-let arr = new Array(16).fill(1).reduce((fib,_,i)=>{
-    fib.push((i <= 1) ? i : fib[i-1] + fib[i-2])
-    return fib
-},[]).slice(1,16);
+    custom_select.appendChild(shown);
 
-
-console.log(arr);
-    const Fib ={
-    even:arr.filter((value => {
-         return value %2 ===1;
-        })
-    ),
-    odd:arr.filter((value => {
-            return value %2 ===0;
-        })
-    )
-
+    let itemList = document.createElement("div");
+    itemList.setAttribute("class", "itemList");
+    for (let i = 1; i < t.length; i++) {
+        let p = document.createElement("p")
+        p.onclick = function () {
+            let change = shown.querySelector("p").innerHTML;
+            shown.querySelector("p").innerHTML = p.innerHTML;
+            itemList.classList.toggle("closed")
+            p.innerHTML = change;
+            shown.click()
+        }
+        p.innerHTML = t.options[i].value;
+        itemList.append(p);
+    }
+    itemList.classList.add("closed");
+    shown.append(itemList);
+    shown.onclick = function () {
+        itemList.classList.toggle("closed")
+    }
 }
-
-console.log(Fib)
-const even_map = new Map( Fib.even.map( value => { return[value,-value] } ) )
-console.log(even_map)
-const odd_map = new Map( Fib.odd.map( value => { return[value,-value] } ) )
-console.log(odd_map)
+function close_selects(e){
+    if(!e.target.closest("div").classList.contains("select")){
+        for(select of document.querySelectorAll(".itemList")){
+            if(!select.classList.contains("closed")){
+                select.classList.add("closed")
+            }
+        }
+    }
+}
+document.addEventListener("click",function (e){
+    close_selects(e);
+})

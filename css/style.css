@@ -345,7 +345,9 @@ p{
     line-height: 18px;
     color: #484848;
 }
+
 .footer .info select{
+
     width: 248px;
     height: 46.28px;
     margin-top: 10px;
@@ -354,11 +356,79 @@ p{
     font-weight: 300;
     font-size: 19px;
     line-height: 24px;
+    position: relative;
+    padding: 3px;
+    color: #484848;
+    border: 1px solid #DBDBDB;
+}
+.footer .info .custom-select select{
+    display: none;
+}
+.footer .info .custom-select{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:46.28px;
+    margin-top: 10px;
+    border: 1px solid #DBDBDB;
+}
+.footer .info .custom-select .select{
+    display: flex;
+    width: 248px;
+    height: 46.28;
+    align-items: center;
+    justify-content: center;
 
-    /* or 126% */
-
+}
+.footer .info .custom-select p{
+    padding: 0;
+    margin: 0;
+    margin-right:auto;
+    margin-left: 10px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 24px;
     color: #484848;
 }
+.footer .info .custom-select img{
+    margin-right: 5px;
+}
+.footer .info .custom-select .itemList{
+    position: absolute;
+    left: 0px;
+    top: 35px;
+    width: 250px;
+    border: 1px solid #DBDBDB;
+    background: #ffffff;
+    z-index: 10;
+}
+.footer .info .custom-select .closed{
+    display: none;
+}
+
+
+
+.footer .info select:focus{
+    outline: none;
+}
+footer .info select:after {
+    position: absolute;
+    content: "<";
+    top: 100px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+
+
+
 .footer .social_container{
     align-self: center;
     width: 1100px;
