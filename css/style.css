@@ -349,7 +349,7 @@ p{
 .footer .info select{
 
     width: 248px;
-    height: 46.28px;
+    height: 47.28px;
     margin-top: 10px;
     font-family: Poppins;
     font-style: normal;
@@ -373,6 +373,7 @@ p{
     height:46.28px;
     margin-top: 10px;
     border: 1px solid #DBDBDB;
+    cursor: pointer;
 }
 .footer .info .custom-select .select{
     display: flex;
@@ -385,6 +386,7 @@ p{
 .footer .info .custom-select p{
     padding: 0;
     margin: 0;
+    cursor: pointer;
     margin-right:auto;
     margin-left: 10px;
     font-family: Poppins;
@@ -406,25 +408,14 @@ p{
     background: #ffffff;
     z-index: 10;
 }
+.footer .info .custom-select .select{
+    height: 46px;
+}
 .footer .info .custom-select .closed{
     display: none;
 }
 
 
-
-.footer .info select:focus{
-    outline: none;
-}
-footer .info select:after {
-    position: absolute;
-    content: "<";
-    top: 100px;
-    right: 10px;
-    width: 0;
-    height: 0;
-    border: 6px solid transparent;
-    border-color: #fff transparent transparent transparent;
-}
 
 
 

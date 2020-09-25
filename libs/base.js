@@ -4,14 +4,16 @@ for(custom_select of custom_selects) {
     shown.setAttribute("class", "select");
     let t = custom_select.querySelector("select")
     shown.innerHTML = `<p>${t.options[t.selectedIndex].value}</p><img src="images/footer/arrow.svg">`
-
     custom_select.appendChild(shown);
-
     let itemList = document.createElement("div");
+    if(custom_select.querySelector("select").classList.contains("language")){
+        itemList.style.zIndex = 11;
+    }
     itemList.setAttribute("class", "itemList");
     for (let i = 1; i < t.length; i++) {
         let p = document.createElement("p")
-        p.onclick = function () {
+        p.onclick = function (e) {
+
             let change = shown.querySelector("p").innerHTML;
             shown.querySelector("p").innerHTML = p.innerHTML;
             itemList.classList.toggle("closed")
@@ -23,7 +25,7 @@ for(custom_select of custom_selects) {
     }
     itemList.classList.add("closed");
     shown.append(itemList);
-    shown.onclick = function () {
+    shown.onclick = function (e) {
         itemList.classList.toggle("closed")
     }
 }
